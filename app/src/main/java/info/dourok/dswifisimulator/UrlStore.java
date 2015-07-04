@@ -14,6 +14,8 @@ public class UrlStore {
 
     public UrlStore() {
         mRandom = new Random();
+        urlList = new ArrayList<>();
+        urlStore = new ArrayList<>();
     }
 
     public void addUrl(UrlObj obj) {

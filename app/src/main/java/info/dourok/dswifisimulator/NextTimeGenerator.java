@@ -1,5 +1,7 @@
 package info.dourok.dswifisimulator;
 
+import android.os.SystemClock;
+
 import java.util.Random;
 
 /**
@@ -46,6 +48,6 @@ public class NextTimeGenerator {
     }
 
     public long nextMoment() {
-        return nextMoment(System.currentTimeMillis());
+        return nextMoment(SystemClock.uptimeMillis());
     }
 }
